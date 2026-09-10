@@ -369,6 +369,14 @@ img { display: block; max-width: 100%; }
 }
 .c-label { font-size: .74rem; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); width: 62px; flex-shrink: 0; }
 .c-value { font-weight: 600; color: var(--text); overflow-wrap: break-word; min-width: 0; }
+.c-link {
+    font-weight: 600; color: var(--accent);
+    overflow-wrap: break-word; min-width: 0;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+.c-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.c-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
 
 /* ---------- Footer ---------- */
 .footer { text-align: center; color: var(--text-muted); font-size: .85rem; padding-top: 12px; }
